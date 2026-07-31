@@ -1,0 +1,113 @@
+💌
+<p>For My Girl ❤️</p>
+</div>
+</div>
+
+<div id="main">
+
+<h1>💖 Happy Girlfriend Day 💖</h1>
+
+<div class="bouquet">💐🌹💐</div>
+
+<h2>Yu War Htet &❤️ 
+    Htet Wai Yan Oo</h2>
+
+<p>Together Since 3/12/2025</p>
+
+<br>
+
+<div class="gallery">
+<img src="girl.jpg">
+<img src="me.jpg">
+</div>
+
+<div class="card">
+<h2>💘 Love Counter</h2>
+<p id="days"></p>
+</div>
+
+<div class="card">
+<button onclick="showMessage()">Open My Heart ❤️</button>
+
+<div id="message">
+
+<br>
+
+Dear My Girl  💐❤️
+
+<br><br>
+
+🌹Happy Girlfriend Day My Girl🌹
+
+<br><br>
+
+
+<br><br>
+
+💖
+
+<br><br>
+
+— Ur Hwyo 🌷
+<video width="300" controls autoplay muted loop>
+  <source src="lv_7666637497509727509_20260731164838.mp4" type="video/mp4">
+</video>
+</div>
+</div>
+
+</div>
+
+<script>
+
+function openLetter(){
+document.getElementById("intro").style.display="none";
+document.getElementById("main").style.display="block";
+}
+
+function showMessage(){
+document.getElementById("message").style.display="block";
+}
+
+const startDate = new Date("2025-12-3");
+const today = new Date();
+
+const diff = today - startDate;
+
+const days = Math.floor(diff/(1000*60*60*24));
+
+document.getElementById("days").innerHTML =
+days + " Days Together ❤️";
+
+function createHeart(){
+
+const heart=document.createElement("div");
+
+heart.classList.add("heart");
+
+heart.innerHTML="💖";
+
+heart.style.left=Math.random()*100+"vw";
+
+heart.style.fontSize=(Math.random()*20+15)+"px";
+
+document.body.appendChild(heart);
+
+setTimeout(()=>{
+heart.remove();
+},6000);
+
+}
+
+setInterval(createHeart,300);
+
+</script>
+
+<audio id="bgmusic" loop>
+    <source src="Ed_Sheeran_-_Perfect(48k).mp3" type="audio/mpeg">
+</audio>
+
+<button onclick="document.getElementById('bgmusic').play()">
+🎵 Play Perfect
+</button>
+</body>
+</html>
